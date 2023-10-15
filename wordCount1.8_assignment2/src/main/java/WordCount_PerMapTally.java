@@ -6,7 +6,7 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class WordCount {
+public class WordCount_PerMapTally {
 
     public static void main(String[] args) throws Exception {
 
@@ -14,12 +14,15 @@ public class WordCount {
 
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "word count");
-        job.setJarByClass(WordCount.class);
+        job.setJarByClass(WordCount_PerMapTally.class);
 
-        job.setMapperClass(OriginalMapper.class);
-//        job.setMapperClass(PerMapTallyMapper.class);
+//        job.setMapperClass(OriginalMapper.class);
+
+        // Use PerMapTallyMapper instead
+        job.setMapperClass(PerMapTallyMapper.class);
 //        job.setMapperClass(PerTaskTallyMapper.class);
 
+        // Combiner is disabled
 //        job.setCombinerClass(IntSumReducer.class);
 
         job.setReducerClass(IntSumReducer.class);

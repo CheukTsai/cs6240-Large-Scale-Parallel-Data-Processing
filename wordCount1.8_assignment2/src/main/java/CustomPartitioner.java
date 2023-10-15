@@ -1,10 +1,11 @@
+import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Partitioner;
 
-public class CustomPartitioner extends Partitioner<Text, Text> {
+public class CustomPartitioner extends Partitioner<Text, IntWritable> {
 
     @Override
-    public int getPartition(Text key, Text value, int numReduceTasks) {
+    public int getPartition(Text key, IntWritable value, int numReduceTasks) {
         char modFactor = 'm';
 
         if (numReduceTasks == 0) return 0;
