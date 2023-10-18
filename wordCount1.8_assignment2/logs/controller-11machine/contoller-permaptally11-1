@@ -1,0 +1,36 @@
+2023-10-18T04:53:05.683Z INFO Ensure step 5 jar file s3://cs6240-zhuocaili/inputs/jars/wordCount1.8_assignment2.jar
+2023-10-18T04:53:07.156Z INFO StepRunner: Created Runner for step 5
+INFO startExec 'hadoop jar /mnt/var/lib/hadoop/steps/s-0867987S0LLIMAZWEA7/wordCount1.8_assignment2.jar WordCount_PerMapTally s3://cs6240-zhuocaili/inputs/large-data-set-assignment2/ s3://cs6240-zhuocaili/outputs/large-dataset/permaptally-11machine-1'
+INFO Environment:
+  PATH=/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/opt/aws/puppet/bin/
+  SECURITY_PROPERTIES=/emr/instance-controller/lib/security.properties
+  HISTCONTROL=ignoredups
+  HISTSIZE=1000
+  HADOOP_ROOT_LOGGER=INFO,DRFA
+  JAVA_HOME=/etc/alternatives/jre
+  AWS_DEFAULT_REGION=us-west-2
+  LANG=en_US.UTF-8
+  MAIL=/var/spool/mail/hadoop
+  LOGNAME=hadoop
+  PWD=/
+  HADOOP_CLIENT_OPTS=-Djava.io.tmpdir=/mnt/var/lib/hadoop/steps/s-0867987S0LLIMAZWEA7/tmp
+  _=/etc/alternatives/jre/bin/java
+  LESSOPEN=||/usr/bin/lesspipe.sh %s
+  SHELL=/bin/bash
+  QTINC=/usr/lib64/qt-3.3/include
+  USER=hadoop
+  HADOOP_LOGFILE=syslog
+  HOSTNAME=ip-172-31-28-148
+  QTDIR=/usr/lib64/qt-3.3
+  HADOOP_LOG_DIR=/mnt/var/log/hadoop/steps/s-0867987S0LLIMAZWEA7
+  EMR_STEP_ID=s-0867987S0LLIMAZWEA7
+  QTLIB=/usr/lib64/qt-3.3/lib
+  HOME=/home/hadoop
+  SHLVL=1
+  HADOOP_IDENT_STRING=hadoop
+INFO redirectOutput to /mnt/var/log/hadoop/steps/s-0867987S0LLIMAZWEA7/stdout
+INFO redirectError to /mnt/var/log/hadoop/steps/s-0867987S0LLIMAZWEA7/stderr
+INFO Working dir /mnt/var/lib/hadoop/steps/s-0867987S0LLIMAZWEA7
+INFO ProcessRunner started child process 27042
+2023-10-18T04:53:07.158Z INFO HadoopJarStepRunner.Runner: startRun() called for s-0867987S0LLIMAZWEA7 Child Pid: 27042
+INFO Synchronously wait child process to complete : hadoop jar /mnt/var/lib/hadoop/steps/s-0867987S...

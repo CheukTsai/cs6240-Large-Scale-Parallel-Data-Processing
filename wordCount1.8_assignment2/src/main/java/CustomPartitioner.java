@@ -4,6 +4,9 @@ import org.apache.hadoop.mapreduce.Partitioner;
 
 public class CustomPartitioner extends Partitioner<Text, IntWritable> {
 
+    /*
+    Use the character m as base and mod with the number of reduce tasks to make it properly partitioned
+     */
     @Override
     public int getPartition(Text key, IntWritable value, int numReduceTasks) {
         char modFactor = 'm';

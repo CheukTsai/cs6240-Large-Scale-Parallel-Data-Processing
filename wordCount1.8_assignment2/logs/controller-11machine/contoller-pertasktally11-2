@@ -1,0 +1,40 @@
+2023-10-18T05:05:52.564Z INFO Ensure step 8 jar file s3://cs6240-zhuocaili/inputs/jars/wordCount1.8_assignment2.jar
+2023-10-18T05:05:54.827Z INFO StepRunner: Created Runner for step 8
+INFO startExec 'hadoop jar /mnt/var/lib/hadoop/steps/s-071174517TZ5Z3I6G54E/wordCount1.8_assignment2.jar WordCount_PerTaskTally s3://cs6240-zhuocaili/inputs/large-data-set-assignment2/ s3://cs6240-zhuocaili/outputs/large-dataset/pertasktally-11machine-2'
+INFO Environment:
+  PATH=/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/opt/aws/puppet/bin/
+  SECURITY_PROPERTIES=/emr/instance-controller/lib/security.properties
+  HISTCONTROL=ignoredups
+  HISTSIZE=1000
+  HADOOP_ROOT_LOGGER=INFO,DRFA
+  JAVA_HOME=/etc/alternatives/jre
+  AWS_DEFAULT_REGION=us-west-2
+  LANG=en_US.UTF-8
+  MAIL=/var/spool/mail/hadoop
+  LOGNAME=hadoop
+  PWD=/
+  HADOOP_CLIENT_OPTS=-Djava.io.tmpdir=/mnt/var/lib/hadoop/steps/s-071174517TZ5Z3I6G54E/tmp
+  _=/etc/alternatives/jre/bin/java
+  LESSOPEN=||/usr/bin/lesspipe.sh %s
+  SHELL=/bin/bash
+  QTINC=/usr/lib64/qt-3.3/include
+  USER=hadoop
+  HADOOP_LOGFILE=syslog
+  HOSTNAME=ip-172-31-28-148
+  QTDIR=/usr/lib64/qt-3.3
+  HADOOP_LOG_DIR=/mnt/var/log/hadoop/steps/s-071174517TZ5Z3I6G54E
+  EMR_STEP_ID=s-071174517TZ5Z3I6G54E
+  QTLIB=/usr/lib64/qt-3.3/lib
+  HOME=/home/hadoop
+  SHLVL=1
+  HADOOP_IDENT_STRING=hadoop
+INFO redirectOutput to /mnt/var/log/hadoop/steps/s-071174517TZ5Z3I6G54E/stdout
+INFO redirectError to /mnt/var/log/hadoop/steps/s-071174517TZ5Z3I6G54E/stderr
+INFO Working dir /mnt/var/lib/hadoop/steps/s-071174517TZ5Z3I6G54E
+INFO ProcessRunner started child process 23761
+2023-10-18T05:05:54.828Z INFO HadoopJarStepRunner.Runner: startRun() called for s-071174517TZ5Z3I6G54E Child Pid: 23761
+INFO Synchronously wait child process to complete : hadoop jar /mnt/var/lib/hadoop/steps/s-07117451...
+INFO waitProcessCompletion ended with exit code 0 : hadoop jar /mnt/var/lib/hadoop/steps/s-07117451...
+INFO total process run time: 48 seconds
+2023-10-18T05:06:42.922Z INFO Step created jobs: job_1697602657544_0008
+2023-10-18T05:06:42.922Z INFO Step succeeded with exitCode 0 and took 48 seconds

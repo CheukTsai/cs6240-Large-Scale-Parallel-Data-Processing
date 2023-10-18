@@ -1,6 +1,6 @@
-2023-10-15T23:42:41.525Z INFO Ensure step 10 jar file s3://cs6240-zhuocaili/inputs/jars/wordCount1.8_assignment2.jar
-2023-10-15T23:42:43.897Z INFO StepRunner: Created Runner for step 10
-INFO startExec 'hadoop jar /mnt/var/lib/hadoop/steps/s-046323526Q3ZGOK90T3D/wordCount1.8_assignment2.jar WordCount_PerTaskTally s3://cs6240-zhuocaili/inputs/wordCount-input/ s3://cs6240-zhuocaili/outputs/pertasktally-output-3'
+2023-10-18T05:03:27.082Z INFO Ensure step 10 jar file s3://cs6240-zhuocaili/inputs/jars/wordCount1.8_assignment2.jar
+2023-10-18T05:03:28.762Z INFO StepRunner: Created Runner for step 10
+INFO startExec 'hadoop jar /mnt/var/lib/hadoop/steps/s-0484087H8C8F1VSTH76/wordCount1.8_assignment2.jar WordCount_PerTaskTally s3://cs6240-zhuocaili/inputs/large-data-set-assignment2/ s3://cs6240-zhuocaili/outputs/large-dataset/pertasktally-6machine-2'
 INFO Environment:
   PATH=/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/opt/aws/puppet/bin/
   SECURITY_PROPERTIES=/emr/instance-controller/lib/security.properties
@@ -13,28 +13,28 @@ INFO Environment:
   MAIL=/var/spool/mail/hadoop
   LOGNAME=hadoop
   PWD=/
-  HADOOP_CLIENT_OPTS=-Djava.io.tmpdir=/mnt/var/lib/hadoop/steps/s-046323526Q3ZGOK90T3D/tmp
+  HADOOP_CLIENT_OPTS=-Djava.io.tmpdir=/mnt/var/lib/hadoop/steps/s-0484087H8C8F1VSTH76/tmp
   _=/etc/alternatives/jre/bin/java
   LESSOPEN=||/usr/bin/lesspipe.sh %s
   SHELL=/bin/bash
   QTINC=/usr/lib64/qt-3.3/include
   USER=hadoop
   HADOOP_LOGFILE=syslog
-  HOSTNAME=ip-172-31-30-10
+  HOSTNAME=ip-172-31-22-2
   QTDIR=/usr/lib64/qt-3.3
-  HADOOP_LOG_DIR=/mnt/var/log/hadoop/steps/s-046323526Q3ZGOK90T3D
-  EMR_STEP_ID=s-046323526Q3ZGOK90T3D
+  HADOOP_LOG_DIR=/mnt/var/log/hadoop/steps/s-0484087H8C8F1VSTH76
+  EMR_STEP_ID=s-0484087H8C8F1VSTH76
   QTLIB=/usr/lib64/qt-3.3/lib
   HOME=/home/hadoop
   SHLVL=1
   HADOOP_IDENT_STRING=hadoop
-INFO redirectOutput to /mnt/var/log/hadoop/steps/s-046323526Q3ZGOK90T3D/stdout
-INFO redirectError to /mnt/var/log/hadoop/steps/s-046323526Q3ZGOK90T3D/stderr
-INFO Working dir /mnt/var/lib/hadoop/steps/s-046323526Q3ZGOK90T3D
-INFO ProcessRunner started child process 19266
-2023-10-15T23:42:43.898Z INFO HadoopJarStepRunner.Runner: startRun() called for s-046323526Q3ZGOK90T3D Child Pid: 19266
-INFO Synchronously wait child process to complete : hadoop jar /mnt/var/lib/hadoop/steps/s-04632352...
-INFO waitProcessCompletion ended with exit code 0 : hadoop jar /mnt/var/lib/hadoop/steps/s-04632352...
-INFO total process run time: 46 seconds
-2023-10-15T23:43:29.975Z INFO Step created jobs: job_1697410655224_0009
-2023-10-15T23:43:29.975Z INFO Step succeeded with exitCode 0 and took 46 seconds
+INFO redirectOutput to /mnt/var/log/hadoop/steps/s-0484087H8C8F1VSTH76/stdout
+INFO redirectError to /mnt/var/log/hadoop/steps/s-0484087H8C8F1VSTH76/stderr
+INFO Working dir /mnt/var/lib/hadoop/steps/s-0484087H8C8F1VSTH76
+INFO ProcessRunner started child process 10597
+2023-10-18T05:03:28.764Z INFO HadoopJarStepRunner.Runner: startRun() called for s-0484087H8C8F1VSTH76 Child Pid: 10597
+INFO Synchronously wait child process to complete : hadoop jar /mnt/var/lib/hadoop/steps/s-0484087H...
+INFO waitProcessCompletion ended with exit code 0 : hadoop jar /mnt/var/lib/hadoop/steps/s-0484087H...
+INFO total process run time: 58 seconds
+2023-10-18T05:04:26.869Z INFO Step created jobs: job_1697602664548_0008
+2023-10-18T05:04:26.869Z INFO Step succeeded with exitCode 0 and took 58 seconds
